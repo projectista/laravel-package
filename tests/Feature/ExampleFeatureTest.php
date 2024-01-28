@@ -1,6 +1,6 @@
 <?php
 
-use Projectista\LaravelPackage\Facades\HelloWorld;
+use {{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }}\Facades\HelloWorld;
 
 it('reads the correct value from config, using the facade', function () {
     $this->assertEquals(

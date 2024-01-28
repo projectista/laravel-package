@@ -1,6 +1,6 @@
 <?php
 
-namespace Projectista\LaravelPackage\Facades;
+namespace {{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }}\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -11,6 +11,6 @@ class HelloWorld extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Projectista\LaravelPackage\HelloWorld::class;
+        return \{{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }}\HelloWorld::class;
     }
 }

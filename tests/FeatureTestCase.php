@@ -1,10 +1,10 @@
 <?php
 
-namespace Projectista\LaravelPackage\Tests;
+namespace {{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }}\Tests;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Projectista\LaravelPackage\ServiceProvider;
+use {{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }}\ServiceProvider;
 
 class FeatureTestCase extends Orchestra
 {

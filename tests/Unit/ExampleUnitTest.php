@@ -1,6 +1,6 @@
 <?php
 
-use Projectista\LaravelPackage\HelloWorld;
+use {{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }}\HelloWorld;
 
 it('returns hello world', function () {
     $skeleton = new HelloWorld();

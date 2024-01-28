@@ -1,6 +1,6 @@
 <?php
 
-namespace Projectista\LaravelPackage;
+namespace {{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }};
 
 class HelloWorld
 {

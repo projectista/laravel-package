@@ -1,12 +1,13 @@
 {
-    "name": "projectista/laravelpackage",
-    "description": "laravel package",
+    "name": "{{ .VendorName | ToLower | NoWS | Alphanumeric }}/{{ .ProjectName | ToLower | NoWS | Alphanumeric }}",
+    "type": "package",
+    "description": "{{ .ProjectDescription }}",
     "keywords": ["php", "laravel", "package"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Vincenzo Petrucci",
-            "email": "vincenzo.petrucci@projectista.illegal.studio"
+            "name": "{{ .AuthorName }}",
+            "email": "{{ .AuthorEmail }}"
         }
     ],
     "require": {
@@ -29,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Projectista\\LaravelPackage\\": "src/",
-            "Projectista\\LaravelPackage\\Database\\Factories\\": "database/factories/"
+            "{{ .VendorName | Title | NoWS | Alphanumeric }}\\{{ .ProjectName | Title | NoWS | Alphanumeric }}\\": "src/",
+            "{{ .VendorName | Title | NoWS | Alphanumeric }}\\LaravelPackage\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Projectista\\LaravelPackage\\Tests\\": "tests/"
+            "{{ .VendorName | Title | NoWS | Alphanumeric }}\\{{ .ProjectName | Title | NoWS | Alphanumeric}}\\Tests\\": "tests/"
         }
     },
     "config": {
@@ -48,7 +49,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Projectista\\LaravelPackage\\ServiceProvider"
+                "{{ .VendorName | Title | NoWS | Alphanumeric }}\\{{ .ProjectName | Title | NoWS | Alphanumeric }}\\ServiceProvider"
             ]
         }
     },

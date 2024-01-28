@@ -1,9 +1,9 @@
 <?php
 
-namespace Projectista\LaravelPackage;
+namespace {{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }};
 
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
-use Projectista\LaravelPackage\Commands\HelloWorldCommand;
+use {{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }}\Commands\HelloWorldCommand;
 
 class ServiceProvider extends IlluminateServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Projectista\LaravelPackage\Commands;
+namespace {{ .VendorName | Title | NoWS | Alphanumeric }}\{{ .ProjectName | Title | NoWS | Alphanumeric }}\Commands;
 
 use Illuminate\Console\Command;
 
