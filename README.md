@@ -6,7 +6,7 @@
 this package provides a wonderful **laravel package skeleton** to start building your next package idea.
 this is part of the **projectista** ([github](https://github.com/projectista/projectista)) ecosystem, a set of tools to help you build your next project.
 
-if is supposed to be used as a starting point for your next package, scaffolded using the projectista binary.
+if is supposed to be used as a starting point for your next laravel package, scaffolded using the projectista binary.
 
 it contains the following features:
 
